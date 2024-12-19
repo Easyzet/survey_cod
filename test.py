@@ -528,7 +528,7 @@ class SurveyForm(QWidget):
         full_path = os.path.dirname(os.path.abspath(__file__))
         
         if os.path.exists(full_path + EXCEL_FILE):
-            workbook = load_workbook(EXCEL_FILE)
+            workbook = load_workbook(full_path + EXCEL_FILE)
             sheet = workbook.active
             num_rows[0] = sheet.max_row
         else:
