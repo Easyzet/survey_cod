@@ -10,7 +10,7 @@ from openpyxl import Workbook, load_workbook
 import os
 
 # Path to Excel file
-EXCEL_FILE = "survey_data.xlsx"
+EXCEL_FILE = "\survey_data.xlsx"
 
 class MainWindow(QMainWindow):
     def __init__(self):
@@ -525,8 +525,9 @@ class SurveyForm(QWidget):
 
         # Save to Excel
         num_rows = ["1"]
+        full_path = os.path.dirname(os.path.abspath(__file__))
         
-        if os.path.exists(EXCEL_FILE):
+        if os.path.exists(full_path + EXCEL_FILE):
             workbook = load_workbook(EXCEL_FILE)
             sheet = workbook.active
             num_rows[0] = sheet.max_row
@@ -540,8 +541,8 @@ class SurveyForm(QWidget):
         
         sheet.append(num_rows + user_data + question_data)
         try:
-            workbook.save(EXCEL_FILE)
-            QMessageBox.information(self, "Успех", "Данные успешно выгружены в Excel!")
+            workbook.save(full_path + EXCEL_FILE)
+            QMessageBox.information(self, "Успех", f"Данные успешно выгружены в Excel! {full_path}{EXCEL_FILE}")
             self.return_to_main()
         except:
             QMessageBox.information(self, "Warning!", "Перед сохранением закройте файл Excel!")
