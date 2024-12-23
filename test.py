@@ -542,7 +542,7 @@ class SurveyForm(QWidget):
         sheet.append(num_rows + user_data + question_data)
         try:
             workbook.save(full_path + EXCEL_FILE)
-            QMessageBox.information(self, "Успех", f"Данные успешно выгружены в Excel! {full_path}{EXCEL_FILE}")
+            QMessageBox.information(self, "Успех", "Данные успешно выгружены в Excel!\n{0}{1}".format(full_path, EXCEL_FILE))
             self.return_to_main()
         except:
             QMessageBox.information(self, "Warning!", "Перед сохранением закройте файл Excel!")
