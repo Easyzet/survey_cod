@@ -11,6 +11,7 @@ import os
 
 # Path to Excel file
 EXCEL_FILE = "\survey_data.xlsx"
+EXCEL_FILE_WITHOUT_DEL = "survey_data.xlsx"
 
 class MainWindow(QMainWindow):
     def __init__(self):
@@ -541,7 +542,7 @@ class SurveyForm(QWidget):
         
         sheet.append(num_rows + user_data + question_data)
         try:
-            workbook.save(full_path + EXCEL_FILE)
+            workbook.save(EXCEL_FILE_WITHOUT_DEL)
             QMessageBox.information(self, "Успех", "Данные успешно выгружены в Excel!\n{0}{1}".format(full_path, EXCEL_FILE))
             self.return_to_main()
         except:
