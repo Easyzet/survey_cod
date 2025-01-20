@@ -77,7 +77,7 @@ class SurveyForm(QWidget):
         self.height_input.setValidator(QIntValidator(120, 210, self))
 
         self.region = QComboBox()
-        self.region.addItems(["Бурятия", "Татарстан", "Кабардино-Балкария", "Челябинская область", "Томская область", "Рязанская область"])
+        self.region.addItems(["Бурятия", "Татарстан", "Кабардино-Балкария", "Челябинская область", "Томская область", "Рязанская область", "Иркутская область", "Республика Коми"])
 
         # Add fields to layout
         self.form_layout.addRow("Регион:", self.region)
